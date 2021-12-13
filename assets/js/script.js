@@ -30,3 +30,10 @@
 // 3. For Loops
 // 4. Console.log
 
+const start_btn = document.querySelector(".start_btn button");
+const rules = document.querySelector(".rules");
+
+start_btn.onclick = ()=>{
+    
+}
+

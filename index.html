@@ -6,21 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/script.js"></script>
 </head>
 <body>
-    <!-- Info Box -->
-    <div class="rules">
-            <div class="quiz-title">
-                <span>Coding Quiz Challenge</span>
-            </div>
-            <div class="quiz-info">
-                <div class="info">Try to answer the following code-related questions within the time limtit.</div>
-                <div class="info">Keep in mind that incorrect answers will penalize your score/time by 10 seconds!</div>
-            </div>
+    <div class="view_scores">
+        <a href="#" id="viewHighScore">View High Scores</a>
     </div>
-    <!-- Start Quiz Button -->
-    <div class="start-btn"><button>Start Quiz</button></div>
+    <!--Info Box--> 
+    <div class="rules">
+        <div class="quiz_title">
+            <span>Coding Quiz Challenge</span>
+        </div>
+        <div class="quiz_info">
+            <div class="info">Try to answer the following code-related questions within the time limit.</div>
+            <div class="info">Keep in mind that incorrect answers will penalize your score as well as reduce your time to complete this challenge by 10 seconds!</div>
+            <div class="info">You got this! Good luck.</div>
+        </div>
+    </div>
+    <!--Start Quiz Button --> 
+    <div class="start_btn"><button>Start Quiz</button></div>
 
+    <!-- Quiz Questions --> 
+    <div class="quiz_section">
+        <header>
+            <div class="high_score">View High Score</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">75</div>
+            </div>
+        </header>
+        <section>
+            <div class="quiz_ques">
+                <span>Commonly used data types Do Not Include:</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>1. Strings</span>
+                </div>
+                <div class="option">
+                    <span>2. Booleans</span>
+                </div>
+                <div class="option">
+                    <span>3. Alerts</span>
+                </div>
+                <div class="option">
+                    <span>4. Numbers</span>
+                </div>
+            </div>
+        </section>
+        <!-- Quiz Section Footer -->
+        <footer>
+            <div class="question_total">
+                <span><p>1</p>of<p>5</p>Questions</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Results Section -->
+    <div class="results_section">
+        <div class="results_title">
+            <span>All Done!</span>
+        </div>
+        <div class="final">Your final score is .</div>
+        <div class="result_info">
+            <div class="results">Enter your initials:</div>
+            <button class="submit_btn">Submit</button>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

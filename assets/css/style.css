@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary: #44e9ff;
-    --secondary: #497980;
+    --primary: #e5cf40cc;
+    --secondary: #b4a01d;
     --tertiary: rgb(192, 246, 253);
     --grey: #333;
     font-Size: 100%;
@@ -16,14 +16,19 @@
 body {
     background: var(--primary);
 }
+.view_scores {
+    position: absolute;
+    top:2%;
+    left:2%;
+}
 
-.start-btn, .rules {
+.start_btn, .rules, .quiz_section, .results_section {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.start-btn button {
+.start_btn button {
     font-size: 25px;
     font-weight: 200;
     color: white;
@@ -34,7 +39,7 @@ body {
     background-color: var(--secondary);
     cursor: pointer;
 }
-.start-btn button:hover {
+.start_btn button:hover {
     color: white;
     background: blue;
 }
@@ -45,8 +50,10 @@ body {
     width: 540px;
     background: white;
     border-radius: 5px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
 }
-.rules .quiz-title {
+.rules .quiz_title {
     height: 60px;
     width: 100%;
     display: flex;
@@ -56,10 +63,156 @@ body {
     font-size: 30px;
     font-weight: 600;
 }
-.rules .quiz-info {
+.rules .quiz_info {
     padding: 15px 35px;
 }
-.rules .quiz-info .info {
+.rules .quiz_info .info {
     margin: 5px 0;
     font-size: 15px;
+}
+.quiz_section {
+    width: 550px;
+    background: white;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+}
+.quiz_section header {
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+}
+.quiz_section header .high_score {
+    font-size: 13px;
+    font-weight: 600;
+}
+.quiz_section header .timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+    padding: 0 16px;
+}
+.quiz_section header .timer .time_text {
+    font-weight: 400;
+    font-size: 13px;
+    user-select: none;
+}
+.quiz_section header .timer .timer_sec {
+    font-size: 13px;
+    font-weight: 500;
+    background: aliceblue;
+    height: 30px;
+    width: 45px;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    user-select: none;
+}
+.quiz_section section {
+    padding: 25px 30px 20px 30px;
+    background: white;
+
+}
+.quiz_section section .quiz_ques {
+    font-size: 25px;
+    font-weight: 600;
+}
+.quiz_section section .option_ist {
+    padding: 20px 0;
+    display: block;
+}
+section .option_list .option {
+    background: aliceblue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+section .option_list .option:hover{
+    color:white;
+    background: blue;
+    border-color:blue;
+}
+.option_list .option:last_child {
+    margin-bottom: 0px;
+}
+.quiz_section footer {
+    height: 60px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quiz_section footer .question_total span {
+    display: flex;
+    user-select: none;
+}
+footer .question_total span p {
+    font-weight: 500;
+    padding: 0 5px;
+} 
+.question_total span p:first_child {
+    padding-left: 0px;
+}
+.results_section {
+    background: white;
+    width: 540px;
+    padding: 25px 30px;
+    border-radius: 5px;
+    display: flex;
+    text-align: left;
+    align-items: left;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+}
+.results_section .results_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+.results_section .results_title span {
+    display:flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.results_title span p {
+    font-weight: 500;
+    padding: 0 4px;
+}
+.results_section .result_info .submit_btn {
+    display: flex;
+    margin: 20px 0;
+}
+.result_info button {
+    margin: 0;
+    height: 25px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background:blue;
+    border-radius: 5px;
+    border: 1px solid blue;
+}
+.result_info button:hover {
+    background: blue;
+    cursor: pointer;
+    transition: all 0.1s ease;
 }
