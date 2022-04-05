@@ -38,7 +38,7 @@ let questions =[
 
             {
                 question:'Of Dr. Geros Andriods, which was the strongest?',
-                choice1: 'Cell',
+                choice1: 'Cell Perfect Form',
                 choice2: 'Andriod 16',
                 choice3: 'Andriod 18',
                 choice4: 'Andriod 17',
@@ -47,8 +47,8 @@ let questions =[
                 {
                     question:'What villian was stunned to see Gokus transformation into a Super Sayian?',
                     choice1: 'Cell',
-                    choice2: 'Buu',
-                    choice3: 'Vegeta',
+                    choice2: 'Majin Buu',
+                    choice3: 'Prince Vegeta',
                     choice4: 'Freiza',
                     answer: 4,
                     },
