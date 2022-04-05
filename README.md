@@ -1,3 +1,3 @@
 # codequiz-challenge
 
-Used of HTML, CSS, and JS to create code quiz webpage.
+Use of HTML, CSS, and JS to create code quiz webpage.
