@@ -1,0 +1,13 @@
+body{
+    color: blueviolet;
+}
+
+#highScoreList{
+    list-style: circle;
+    margin-bottom: 4rem;
+}
+
+.highscore{
+    font-size: medium;
+    margin-bottom: 0.5rem;
+}
